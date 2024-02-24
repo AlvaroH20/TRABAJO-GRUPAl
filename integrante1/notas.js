@@ -17,6 +17,7 @@ calcularPromedio = function (p1, p2, p3) {
 }
 
 calcular=function(){
+    
     let notaCaja1=recuperarFloat("cajaNota1");
     let notaCaja2=recuperarFloat("cajaNota2");
     let notaCaja3=recuperarFloat("cajaNota3");
@@ -27,6 +28,7 @@ calcular=function(){
     habilitarComponente("guardar");
 }
 guardar=function(){
+
     let nombreE=recuperarTexto("cajaNombre");
     let apellidoE=recuperarTexto("cajaApellido");
     let notaCaja1=recuperarFloat("cajaNota1");
@@ -34,7 +36,11 @@ guardar=function(){
     let notaCaja3=recuperarFloat("cajaNota3");
     let totalSuma=calcularTotal(notaCaja1,notaCaja2,notaCaja3);
     let promedioE=calcularPromedio(notaCaja1,notaCaja2,notaCaja3);
-    let estudiante={}
+    if(nombreE==""||nombreE.length<3){
+        mostrarTexto("erroresN","CAMPO OBLIGATORIO");
+     
+    }else{
+        let estudiante={}
     estudiante.nombre=nombreE;
     estudiante.apellido=apellidoE;
     estudiante.nota1=notaCaja1;
@@ -48,6 +54,9 @@ guardar=function(){
     habilitarComponente("guardar");
     alert("Notas guardadas con exito");
     limpiar();
+    }
+    
+    
 }
 
 mostrarEstudiantes=function(){
