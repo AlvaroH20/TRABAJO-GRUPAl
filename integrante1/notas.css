@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h2 {
+    color: navy;
+    margin-bottom: 20px;
+}
+
+h3{
+    color: crimson;
+    font-style: italic;
+}
+
+table{
+    color: #ffffff;
+    background-color: rgb(110, 20, 20);
+    font-style: oblique;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ff8c00; /* Color llamativo para las etiquetas */
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+.logoEscuela{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    
+}

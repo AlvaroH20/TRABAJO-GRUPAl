@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <script src="notas.js"></script>
+    <script src="../utilitarios.js"></script>
+    <link rel="stylesheet" href="notas.css"/>
+</head>
+<body onload="inicio()">
+    <div class="logoEscuela">
+        <img src="logoKrakeDev.png" width="80%" />
+        <h3>autor: krakedev</h3>
+    </div>
+    <h2>Ingresar nombre</h2>
+    <input type="text" id="cajaNombre"/>
+    <h3 id="erroresN"></h3>
+    <h2>Ingresar apellido</h2>
+    <input type="text" id="cajaApellido"/>
+    <h3 id="erroresA"></h3>
+    <h2>Ingresar nota1</h2>
+    <input type="text" id="cajaNota1"/>
+    <h3 id="erroresN1"></h3>
+    <h2>Ingresar nota2</h2>
+    <input type="text" id="cajaNota2"/>
+    <h3 id="erroresN2"></h3>
+    <h2>Ingresar nota3</h2>
+    <input type="text" id="cajaNota3"/>
+    <h3 id="erroresN3"></h3>
+    <input type="button" class="button" value="GUARDAR" id="guardar" onclick="guardar();"/>
+    <input type="button" class="button" value="CALCULAR" onclick="calcular();"/>
+    <h2 id="sumaTotal"></h2>
+    <h2 id="resultadoPromedio"></h2>
+    <div id="tablita"></div>
+</body>
