@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="notas.js"></script>
+    <script src="../utilitarios.js"></script>
+    <link href="notas.css" rel="stylesheet">
+    <title>PRUEBA</title>
+</head>
+
+<body>
+    <div class="page_notas">
+
+        <div class="notas_img">
+            <img src="imagenes/dragonBall.jpg" width="400px">
+        </div>
+        <div class="notas_title">
+            <h1>NOTAS</h1>
+        </div>
+        <div class="notas_container">
+            <div class="container_box">
+                <label class="box_label">Nombre</label>
+                <input type="input" id="txtNombre" class="box_text" />
+            </div>
+            <div class="container_box">
+                <label class="box_label">Apellido</label>
+                <input type="input" id="txtApellido" class="box_text"/>
+            </div>
+            <div class="container_box">
+                <label class="box_label">Nota1</label>
+                <input type="input" id="txtNota1" class="box_text"/>
+            </div>
+            <div class="container_box">
+                <label class="box_label">Nota2</label>
+                <input type="input" id="txtNota2" class="box_text"/>
+            </div>
+            <div class="container_box">
+                <label class="box_label">Nota3</label>
+                <input type="input" id="txtNota3" class="box_text"/>
+            </div>
+            <div class="container_box">
+                <input type="button" value="CALCULAR" id="btnCalcular" class="box_btn" onclick="calcular()" />
+                <input type="button" value="GUARDAR" id="btnGuardar" class="box_btn" onclick="guardar()" />
+            </div>
+
+        </div>
+
+        <div>
+            <div class="box_total">
+                <h2 class="total_title">Total: </h2>
+                <span class="total_value" id="total"></span>
+            </div>
+            <div  class="box_total">
+                <h2 class="total_title">Promedio: </h2>
+                <span id="promedio" class="promedio_value" ></span>
+            </div>
+        </div>
+
+        <div class="box_tabla" id="tablaEstudiantes">
+            
+        </div>
+
+        <div class="container_footer">
+            <footer>MR. CHANGO - 2024 KRAKEDEV</footer>
+        </div>
+
+    </div>
+</body>
+
+</html>
