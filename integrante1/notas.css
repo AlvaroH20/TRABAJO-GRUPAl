@@ -55,3 +55,12 @@ input[type="text"] {
     align-items: center;
     
 }
+.menu{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid;
+    border-color: #217023;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
