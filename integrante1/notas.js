@@ -37,7 +37,7 @@ guardar=function(){
     let totalSuma=calcularTotal(notaCaja1,notaCaja2,notaCaja3);
     let promedioE=calcularPromedio(notaCaja1,notaCaja2,notaCaja3);
     if(nombreE==""||nombreE.length<3){
-        mostrarTexto("erroresN","CAMPO OBLIGATORIO");
+        mostrarTexto("erroresN","CAMPO OBLIGATORIO-El nombre debe tener al menos 3 caracteres");
      
     }else{
         let estudiante={}
